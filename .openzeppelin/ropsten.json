@@ -1,0 +1,152 @@
+{
+  "manifestVersion": "3.1",
+  "impls": {
+    "939d75b11454fa8c41060ef5d2e4aed5bfbdbdce8f9d30e6be2bc0f8efc29839": {
+      "address": "0xe3B318eD98b6846e5d45B514CeD8735A7F7e23B0",
+      "txHash": "0x521b1d16bfb7857444901c6162460c10286cfdb2065875dbb4801874151065fa",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "Staking.sol:13"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "Staking.sol:18"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "_status",
+            "type": "t_uint256",
+            "src": "Staking.sol:300"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "Staking.sol:330"
+          },
+          {
+            "contract": "Staking",
+            "label": "epoch1Start",
+            "type": "t_uint256",
+            "src": "Staking.sol:340"
+          },
+          {
+            "contract": "Staking",
+            "label": "epochDuration",
+            "type": "t_uint256",
+            "src": "Staking.sol:343"
+          },
+          {
+            "contract": "Staking",
+            "label": "balances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "Staking.sol:346"
+          },
+          {
+            "contract": "Staking",
+            "label": "poolSize",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(Pool)376_storage))",
+            "src": "Staking.sol:354"
+          },
+          {
+            "contract": "Staking",
+            "label": "balanceCheckpoints",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_array(t_struct(Checkpoint)391_storage)dyn_storage))",
+            "src": "Staking.sol:365"
+          },
+          {
+            "contract": "Staking",
+            "label": "lastWithdrawEpochId",
+            "type": "t_mapping(t_address,t_uint128)",
+            "src": "Staking.sol:367"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(Pool)376_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct Staking.Pool))"
+          },
+          "t_mapping(t_uint256,t_struct(Pool)376_storage)": {
+            "label": "mapping(uint256 => struct Staking.Pool)"
+          },
+          "t_struct(Pool)376_storage": {
+            "label": "struct Staking.Pool",
+            "members": [
+              {
+                "label": "size",
+                "type": "t_uint256"
+              },
+              {
+                "label": "set",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_array(t_struct(Checkpoint)391_storage)dyn_storage))": {
+            "label": "mapping(address => mapping(address => struct Staking.Checkpoint[]))"
+          },
+          "t_mapping(t_address,t_array(t_struct(Checkpoint)391_storage)dyn_storage)": {
+            "label": "mapping(address => struct Staking.Checkpoint[])"
+          },
+          "t_array(t_struct(Checkpoint)391_storage)dyn_storage": {
+            "label": "struct Staking.Checkpoint[]"
+          },
+          "t_struct(Checkpoint)391_storage": {
+            "label": "struct Staking.Checkpoint",
+            "members": [
+              {
+                "label": "epochId",
+                "type": "t_uint128"
+              },
+              {
+                "label": "multiplier",
+                "type": "t_uint128"
+              },
+              {
+                "label": "startBalance",
+                "type": "t_uint256"
+              },
+              {
+                "label": "newDeposits",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint128": {
+            "label": "uint128"
+          },
+          "t_mapping(t_address,t_uint128)": {
+            "label": "mapping(address => uint128)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          }
+        }
+      }
+    }
+  },
+  "admin": {
+    "address": "0x2CBfD88a5a8363E15480B5d0787D7f65CB1cb5AD",
+    "txHash": "0x369e1d69fb7f7b6125a3c253d34c6122b46055ef38ec4c3fa1c353e009297705"
+  }
+}
